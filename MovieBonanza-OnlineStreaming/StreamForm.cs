@@ -16,5 +16,10 @@ namespace MovieBonanza_OnlineStreaming
         {
             InitializeComponent();
         }
+
+        private void ButtonOk_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

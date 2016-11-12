@@ -52,6 +52,7 @@
             this.ListBoxMovies.Location = new System.Drawing.Point(13, 72);
             this.ListBoxMovies.Name = "ListBoxMovies";
             this.ListBoxMovies.Size = new System.Drawing.Size(184, 284);
+            this.ListBoxMovies.Sorted = true;
             this.ListBoxMovies.TabIndex = 0;
             // 
             // LabelMovies
