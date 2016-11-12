@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,20 @@ using System.Windows.Forms;
 
 namespace MovieBonanza_OnlineStreaming
 {
-    public partial class SelectionForm : Form
+    public partial class SplashForm : Form
     {
-        public SelectionForm()
+        public SplashForm()
         {
             InitializeComponent();
         }
 
-        private void ButtonNext_Click(object sender, EventArgs e)
+        private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
-            OrderForm newOrderForm = new OrderForm();
-            newOrderForm.Show();
+            
+            SplashFormTimer.Enabled = false;
+
+            SelectionForm startForm = new SelectionForm();
+            startForm.Show();
             this.Hide();
         }
     }

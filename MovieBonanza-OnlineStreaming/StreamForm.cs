@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace MovieBonanza_OnlineStreaming
 {
-    public partial class SelectionForm : Form
+    public partial class StreamForm : Form
     {
-        public SelectionForm()
+        public StreamForm()
         {
             InitializeComponent();
-        }
-
-        private void ButtonNext_Click(object sender, EventArgs e)
-        {
-            OrderForm newOrderForm = new OrderForm();
-            newOrderForm.Show();
-            this.Hide();
         }
     }
 }

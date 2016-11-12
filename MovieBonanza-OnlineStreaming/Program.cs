@@ -16,7 +16,7 @@ namespace MovieBonanza_OnlineStreaming
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SelectionForm());
+            Application.Run(new SplashForm());
         }
     }
 }
