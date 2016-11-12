@@ -49,11 +49,33 @@
             this.ListBoxMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxMovies.FormattingEnabled = true;
             this.ListBoxMovies.ItemHeight = 20;
+            this.ListBoxMovies.Items.AddRange(new object[] {
+            "Company Man",
+            "Death Race 2",
+            "FootLoose",
+            "Gnomeo and Juiliet",
+            "I am Number Four",
+            "Just Go With It",
+            "No Strongs Attached",
+            "Real Steel",
+            "Sanctum",
+            "Season of the Witch",
+            "The Dilemma",
+            "The Eagle",
+            "The Green Hornet",
+            "The Mechanic",
+            "The Other WOmen",
+            "The Rite",
+            "The Roommate",
+            "The Way Back",
+            "Vedar Rapids",
+            "Wait for Forever"});
             this.ListBoxMovies.Location = new System.Drawing.Point(13, 72);
             this.ListBoxMovies.Name = "ListBoxMovies";
             this.ListBoxMovies.Size = new System.Drawing.Size(184, 284);
             this.ListBoxMovies.Sorted = true;
             this.ListBoxMovies.TabIndex = 0;
+            this.ListBoxMovies.SelectedIndexChanged += new System.EventHandler(this.ListBoxMovies_SelectedIndexChanged);
             // 
             // LabelMovies
             // 
@@ -149,6 +171,7 @@
             // 
             // ButtonNext
             // 
+            this.ButtonNext.Enabled = false;
             this.ButtonNext.Location = new System.Drawing.Point(669, 332);
             this.ButtonNext.Name = "ButtonNext";
             this.ButtonNext.Size = new System.Drawing.Size(97, 33);
